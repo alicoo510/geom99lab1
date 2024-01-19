@@ -1,1 +1,227 @@
-https://maps.googleapis.com/maps/api/directions/json?origin=place_id:ChIJ6z1rw54M1YkRlyHtwe5QluA&destination=place_id:ChIJw6Lpplmg1YkRojfuo--6zRw&key=AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE
+{
+   "geocoded_waypoints" : 
+   [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJ6z1rw54M1YkRlyHtwe5QluA",
+         "types" : 
+         [
+            "political",
+            "sublocality",
+            "sublocality_level_1"
+         ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJw6Lpplmg1YkRojfuo--6zRw",
+         "types" : 
+         [
+            "neighborhood",
+            "political"
+         ]
+      }
+   ],
+   "routes" : 
+   [
+      {
+         "bounds" : 
+         {
+            "northeast" : 
+            {
+               "lat" : 44.2132318,
+               "lng" : -78.62762859999999
+            },
+            "southwest" : 
+            {
+               "lat" : 44.0966975,
+               "lng" : -78.7247292
+            }
+         },
+         "copyrights" : "Map data ©2024",
+         "legs" : 
+         [
+            {
+               "distance" : 
+               {
+                  "text" : "18.9 km",
+                  "value" : 18867
+               },
+               "duration" : 
+               {
+                  "text" : "14 mins",
+                  "value" : 868
+               },
+               "end_address" : "Pontypool, Kawartha Lakes, ON L0A, Canada",
+               "end_location" : 
+               {
+                  "lat" : 44.1003473,
+                  "lng" : -78.62762859999999
+               },
+               "start_address" : "Janetville, Kawartha Lakes, ON L0B 1K0, Canada",
+               "start_location" : 
+               {
+                  "lat" : 44.21322319999999,
+                  "lng" : -78.7247292
+               },
+               "steps" : 
+               [
+                  {
+                     "distance" : 
+                     {
+                        "text" : "3 m",
+                        "value" : 3
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 0
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 44.2132318,
+                        "lng" : -78.7246924
+                     },
+                     "html_instructions" : "Head \u003cb\u003eeast\u003c/b\u003e on \u003cb\u003ePigeon Creek Rd\u003c/b\u003e toward \u003cb\u003eJanetville Rd\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003eKawartha Lakes County Rd 5\u003c/b\u003e",
+                     "polyline" : 
+                     {
+                        "points" : "skzlGp|n_NAG"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 44.21322319999999,
+                        "lng" : -78.7247292
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "5.8 km",
+                        "value" : 5800
+                     },
+                     "duration" : 
+                     {
+                        "text" : "5 mins",
+                        "value" : 286
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 44.1637478,
+                        "lng" : -78.7020265
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e at the 1st cross street onto \u003cb\u003eJanetville Rd\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003eKawartha Lakes County Rd 5\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : 
+                     {
+                        "points" : "ukzlGh|n_Np@e@^W\\W~@m@lA}@^W?ATOJC`@OfC}@bA_@`@O`@M?Ab@M`A_@@?`@O`@O`@M`@O`@OhC}@bA_@`@MDCZK`@OjDkA`@M`@OfBk@`@O`@O`@M`@OvIuCZMDAbLgClD_ATIJCdA]`@Oh@QzB{@l@S`@OlAe@x@YfBk@~@[BA`@OdDgAzCeATI`@MfC}@@?^MdA_@xKuDlEyAxBu@hDmAvAoAf@_@j@e@~@g@bAe@NGbA]`@ObA_@b@M^O`@Ob@O`@MbA_@`@M?AhC}@bA]`@O`@M`@OBA\\M`@O`@Ob@O`@M^Ob@O`@O`@O`@M?AjE}A@?bA]^O@?`@OTIJE`@M?AbA]`@M@A`A]@?^M@AbA]`@O`@Mb@O^O@?hDkAbA]fBm@`@MbA]`@Mb@M`@O`@M`@O`@Mb@M`@O`@M`@MbA]b@OdBk@lEwAb@M`@ObA]`@Mb@MXKh@QjS}GnFiB`@M`@O`@MdA_@`@M`@OjC{@"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 44.2132318,
+                        "lng" : -78.7246924
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "3.4 km",
+                        "value" : 3415
+                     },
+                     "duration" : 
+                     {
+                        "text" : "3 mins",
+                        "value" : 150
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 44.1731886,
+                        "lng" : -78.66128270000002
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eON-7A E\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : 
+                     {
+                        "points" : "mvplGtnj_NY}B]aCKo@WmBe@cDYsBQkAIo@_AyGM}@SuAWiBcAcH]iCKm@SuAy@}Fc@{CG]k@}DeCaQcCoPKu@w@oFQkA[qBa@mCc@yCi@sDi@{DWaBKo@Io@YiBQsAKo@eAoH_ByKKq@Km@]gCAGKo@_@eCAGIo@i@sDy@yFKo@EYOcAIo@EYEUIo@QgAm@gEAMKo@W{AKq@Ko@?EIi@Io@QgAOgAIm@E[]kC"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 44.1637478,
+                        "lng" : -78.7020265
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "9.1 km",
+                        "value" : 9085
+                     },
+                     "duration" : 
+                     {
+                        "text" : "6 mins",
+                        "value" : 379
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 44.0966975,
+                        "lng" : -78.6322107
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eON-35 S\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003eON-7A E\u003c/b\u003e (signs for \u003cb\u003eOntario 7 Alternate E\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003eEdgewood Road\u003c/b\u003e)\u003cdiv style=\"font-size:0.9em\"\u003eContinue to follow ON-35 S\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : 
+                     {
+                        "points" : "mqrlG~ob_NIi@@c@?AOcAUgBC_@AQAK?M?K?G@I@E?CBKBKBIFIDGDEDEDEFCLEHCHCZGBADA?ALOz@Kt@If@Gj@GjBKD?h@C~@Cn@Cz@?^?b@@P@n@?D?b@B^@`AF|@HH@dALZD~@LjAPdAP|@N|@PrARjARbAPr@LdARjARdAPnATnAR`APt@Lb@F|@L|@Lp@JnAPJ@P@^DxAJx@@jA?d@Av@CF?p@GZCp@K`@I\\Gj@Mf@MZIf@Qb@Q|@]pAe@`A_@`@OlAe@VKfBq@^MfC_AxAi@l@UxDyAfFmBn@Wl@Sn@Uv@WhDkAb@O`@OrAe@bA]TIzFqBnAc@zAg@fC}@nFmBbA]z@YpCcA`@MnFmB`@MzCgAp@UhBo@\\MvAi@n@Sz@[nBo@t@WtAe@pAi@NGbAa@`@QXMn@YvHcDl@Y|DaBdCeADAzAq@d@QdBu@`EgBhAg@`A_@JETKbA_@B?\\Mb@O`@OXKFC`Bi@BA`@O`@MdA]@A^Mp@Ur@UXKHCtBs@zAg@xAg@FAbA]JE|@YFCrAe@~Ag@tAe@tFkBHC`@O~@[zAg@tAg@t@U`Bk@BAfCy@l@Sx@Y`@O@?`@M`@O`@M`@O@?`A]b@M\\MB?bA_@`@MPGxBu@hBm@nAc@hBm@n@U`@Ot@W|@YLGf@Ob@OzAg@rAc@bA[dBm@l@Ux@W`@M\\MfA_@bA]dA_@r@UPG^M@?^Mb@OBAzAg@zBu@PG@A^M@?t@Wp@UFCp@WhBu@lAg@ZMZMvD}AdEaB~Ao@`@O@A`@O?ArBy@fBs@vCgAx@WBAp@UZKtBo@PGl@Q~@Yt@UNEb@OZKjC}@"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 44.1731886,
+                        "lng" : -78.66128270000002
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "0.6 km",
+                        "value" : 564
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 53
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 44.1003473,
+                        "lng" : -78.62762859999999
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003ePontypool Rd\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003eKawartha Lakes County Rd 12\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : 
+                     {
+                        "points" : "ksclGhz|~MOm@KSMUKOKKOKm@OMCSGw@QMEKCWMSMGKIKKQUe@Q]KUo@sAi@}@s@oAEIcAcBaAkBUc@k@iAKQ"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 44.0966975,
+                        "lng" : -78.6322107
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : 
+         {
+            "points" : "skzlGp|n_NAGp@e@|@o@lDeC`@ShDmAfC}@nFmBrHkC|LeEzKsD`@ObLgClD_A`@MdA]tFqBpG{BjGuB|Y_KfIoChDmAvAoArAeAbCmAxDuAhC}@vJiDvJkDdRwGnE{A~NaFzYqJha@_NjDkAjC{@Y}Bi@qDiBqMkB}M_Gsa@{SkxAgLsw@sEk[w@_G@e@e@kDGkABc@Je@X]d@Sn@OLQpBUdE[hBGjBCdCBjCLhD^nG`A`HjAbPpCpEn@lCZxAJx@@pBA~@ClAK|Ck@bAWjAc@rFsBlFqB~XiKhp@eUnVuIvHiCfEeBnLeFdL{EvKwEfDqAnFiBjHcCjMgEpGwB`J{C|P{FnFiBvYwJvGwBnFiBvIwCrIuCpBq@dGcC~PaHzEmBpE_BfEsAtDiAzE_B[aAYe@[W{@SeBc@k@[QW_AkByAqCy@yAeCoEaAmBKQ"
+         },
+         "summary" : "Janetville Rd/Kawartha Lakes County Rd 5 and ON-35 S",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}
