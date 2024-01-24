@@ -5,7 +5,7 @@
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
-        #map {
+        #Map {
           height: 100%;
         }
 
@@ -17,17 +17,98 @@
           padding: 0;
         }
     </style>
+
+
     <script>
       let map;
+      async function initMap() {
+  // Request needed libraries.
+  const { Map, InfoWindow } = await google.maps.importLibrary("maps");
+  const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary(
+    "marker",
+  );
+  const map = new Map(document.getElementById("map"), {
+    zoom: 8,
+    center: { lat:64.146, lng: -19.527 },
+    mapId: "4504f8b37365c3d0",
+    
+  });
+    const trafficLayer = new google.maps.TrafficLayer();
 
-      function initMap() {
-        map = new google.maps.Map(document.getElementById("map"), {
-          center: { lat: 44.21, lng:-78.72 },/*,,17should be Windy Ridges Conservation Area*/ 
+  trafficLayer.setMap(map);
+
+  // Set LatLng and title text for the markers. The first marker (Boynton Pass)
+  // receives the initial focus when tab is pressed. Use arrow keys to
+  // move between markers; press tab again to cycle through the map controls.
+  const tourStops = [
+    {
+      position: { lat: 64.139, lng: -21.911  },
+      title: "Reykjavik",
+    },
+      {
+      position: {lat:63.623 , lng:-19.987}, 
+     title: "Seljalandsfoss and Gljufrabui",
+    },
+    {
+      position: { lat: 63.543, lng: -19.508 },
+      title: "Skogafoss",
+    },
+     {
+      position: { lat: 63.406, lng: -19.072 },
+      title: "Reynisfjara Black Sand Beach",
+    },
+   
+    {
+      position: { lat: 64.044, lng: -16.177 },
+      title: "Diamond Beach",
+    },
+  {
+      position: {lat: 64.255 , lng:-21.117 },
+      title: "Silfa Snorkeling Thingvallier",
+    },
+    {
+      position: {lat: 64.310, lng:-20.302 },
+      title: "Geysir",
+    },
+     {
+      position: {lat: 63.897, lng: -22.268},
+      title: "Fagradalsfjall", 
+    },
+    {
+      position: { lat: 63.868, lng: -22.675 },
+      title: "Bridge Between Continents",
+    },
+   
+  ];
+  // Create an info window to share between markers.
+  const infoWindow = new InfoWindow();
+
+  // Create the markers.
+  tourStops.forEach(({ position, title }, i) => {
+    const pin = new PinElement({
+      glyph: `${i + 1}`,
+    });
+    const marker = new AdvancedMarkerElement({
+      position,
+      map,
+      title: `${i + 1}. ${title}`,
+      content: pin.element,
+    });
+
+    // Add a click listener for each marker, and set up the info window.
+    marker.addListener("click", ({ domEvent, latLng }) => {
+      const { target } = domEvent;
+
+      infoWindow.close();
+      infoWindow.setContent(marker.title);
+      infoWindow.open(marker.map, marker);
+    });
+  });
+}
+
+initMap();
 
 
-          zoom: 13,
-        });
-      }
     </script>
   </head>
   <body>
