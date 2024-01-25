@@ -1,6 +1,17 @@
+<!--Code for Custom Map, checklist item 6
+Alison Cooke
+January 25, 2023
+this code takes from Google map platform: https://developers.google.com/maps/documentation/javascript/examples/advanced-markers-accessibility
+
+This map shows the  route I followed when i went to Iceland each point marked in order of where I went.
+Each stop labeled with what attracted me to going there
+I also included traffic routes and indicators becasue the trip was taken in a car and in Iceland it is very helpful to know
+the conditions of the roads before leaving a major city
+-->
+
 <html>
   <head>
-    <title>Simple Map</title>
+    <title>Custom Map</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <style>
       /* Always set the map height explicitly to define the size of the div
@@ -9,7 +20,7 @@
           height: 100%;
         }
 
-        /* Optional: Makes the sample page fill the window. */
+        /*  Makes the Cuastom map fill the window. */
         html,
         body {
           height: 100%;
@@ -22,6 +33,7 @@
     <script>
       let map;
       async function initMap() {
+        //this template was taken from Goodle Map platform Samples page
   // Request needed libraries.
   const { Map, InfoWindow } = await google.maps.importLibrary("maps");
   const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary(
@@ -31,20 +43,19 @@
     zoom: 8,
     center: { lat:64.146, lng: -19.527 },
     mapId: "4504f8b37365c3d0",
-    
+    //centering the map over iceland at an appropriate zoom level to be able to see all the points on the landing page
   });
     const trafficLayer = new google.maps.TrafficLayer();
 
   trafficLayer.setMap(map);
 
-  // Set LatLng and title text for the markers. The first marker (Boynton Pass)
-  // receives the initial focus when tab is pressed. Use arrow keys to
-  // move between markers; press tab again to cycle through the map controls.
+  // adding in the traffic layer also taken from google maps platform sample page
   const tourStops = [
     {
       position: { lat: 64.139, lng: -21.911  },
       title: "Reykjavik",
     },
+    //each stop has to have a position a lat and long and a title that appears when the icon is clicked by user
       {
       position: {lat:63.623 , lng:-19.987}, 
      title: "Seljalandsfoss and Gljufrabui",
@@ -84,6 +95,8 @@
   const infoWindow = new InfoWindow();
 
   // Create the markers.
+  //I would have liked to change the colour of the icons to indicate what they represented like blue for water falls
+  //red for volcanoes and green for other stops but I could not figure out how to change individual marker colours 
   tourStops.forEach(({ position, title }, i) => {
     const pin = new PinElement({
       glyph: `${i + 1}`,
